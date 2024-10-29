@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja de Roupas - Estilo C&A</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Loja do erick</div>
+        <div class="header-right">
+            <input type="text" placeholder="Buscar...">
+            <a href="#login" class="account">Entrar</a>
+            <a href="#carrinho" class="cart">🛒</a>
+        </div>
+    </header>  
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#feminino">Feminino</a></li>
+            <li><a href="#masculino">Masculino</a></li>
+            <li><a href="#infantil">Infantil</a></li>
+            <li><a href="#beleza">Beleza</a></li>
+            <li><a href="#mindset">Mindset</a></li>
+            <li><a href="#calçados">Calçados</a></li>
+            <li><a href="#esportivo">Esportivo</a></li>
+            <li><a href="#eletrônicos">Eletrônicos</a></li>
+            <li><a href="#jeans">Jeans</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="produtos">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="https://cea.vtexassets.com/assets/vtex.file-manager-graphql/images/ebaa1f6c-8439-4859-8292-cdfdedf6142b___0da589ddcdbf7cd3bc7ddb7dee8c583f.png" alt="Camiseta">
+                    <img src="https://cea.vtexassets.com/assets/vtex.file-manager-graphql/images/1b9e5cf8-a949-40d9-8f23-81e0d4ffbc4b___5d7b66ddbd3ea39a0a8357e6a7a241a9.png" alt="Calça">
+                    <img src="https://cea.vtexassets.com/assets/vtex.file-manager-graphql/images/3e616283-6552-4a37-8f67-9654bcc40ce4___e09bb16dd736a8fe122a78ba225cc3af.png" alt="Jaqueta">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="topicos-aa">
+                <button class="topicoBotao">topico 1</button>
+                <button class="topicoBotao">topico 2</button>
+                <button class="topicoBotao">topico 3</button>
+
+            </div>
+            <h3>As mais compradas</h3>
+            <div class="produtos-container">
+                <div class="produto">
+                    <img src="images/fit1.png" class="fit1">
+                    <h3>Camiseta Básica</h3>
+                    <p>R$ 49,90</p>
+                    <button class="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="images/fit2.png" class="fit2">
+                    <h3>Calça Jeans</h3>
+                    <p>R$ 89,90</p>
+                    <button class="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="images/fit3.png" class="fit3">
+                    <h3>Jaqueta de Couro</h3>
+                    <p>R$ 199,90</p>
+                    <button class="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="images/fit4.png" class="fit4">
+                    <h3>Jaqueta de Couro</h3>
+                    <p>R$ 199,90</p>
+                    <button class="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="images/fit5.png" class="fit5">
+                    <h3>Jaqueta de Couro</h3>
+                    <p>R$ 199,90</p>
+                    <button class="button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <p>© 2024 Loja de Roupas da silva - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

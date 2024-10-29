@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+}
+
+header .logo {
+    font-size: 2em;
+    color: #333; /* Cor do texto */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right input[type="text"] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-right: 10px;
+}
+
+.header-right input[type="text"]:focus {
+    border-color: #0056b3;
+}
+
+.header-right .account,
+.header-right .cart {
+    color: black; /* Cor azul */
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-right .account:hover,
+.header-right .cart:hover {
+    color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+}
+
+.navbar {
+    padding: 30px 0; /* Espaçamento vertical */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    list-style: none; /* Remove as bolinhas da lista */
+}
+
+.navbar li {
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    transition: color 0.3s; /* Transição suave na cor */
+}
+
+.navbar a:hover {
+    color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+
+main {
+    padding: 20px;
+}
+
+#banner img {
+    width: 100%;
+    max-height: 50px;
+    object-fit: cover;
+    max-width: 120px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 1500px; 
+    margin: auto; 
+}
+
+.carousel-images img {
+    width: 1500px; 
+    height: auto; 
+    margin: 0 auto; 
+    border-radius: 5px; 
+}
+
+button {
+    background-color: #007BFF; 
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border: none;
+    border-radius: 50%; 
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1; 
+    display: none; /* Inicialmente escondido */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição suave */ 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte para a seta */
+    color: black; /* Cor da seta */
+}
+
+button.prev {
+    left: 10px; 
+}
+
+button.next {
+    right: 10px; 
+}
+
+/* Exibir botões quando o mouse estiver sobre o carrossel */
+.carousel:hover button.prev,
+.carousel:hover button.next {
+    display: block; /* Mostra os botões ao passar o mouse */
+}
+
+.topicos-aa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    margin-top: 10px;
+    padding: 20px;
+    gap: 150px;
+    
+}
+
+.topicoBotao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s, transform 0.2s; 
+    
+}
+.produto img{
+    max-width: 120px;
+}
+.produto:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+}
